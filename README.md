@@ -1,1 +1,1 @@
-# SpringBoot-JPA-study
+# SpringBoot & JPA study
