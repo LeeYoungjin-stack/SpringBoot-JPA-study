@@ -1,4 +1,4 @@
-package jpastudy.jpaeco;
+package jpastudy.jpaeco.domain;
 
 import lombok.Getter;
 
