@@ -20,4 +20,11 @@ public class Fundingpay {
 
     private String funid; // 후원아이디
     private int funpay;
+
+
+    //연관관계편의메서드
+    public void setFunding(Funding funding) {
+        this.funding= funding;
+        funding.getFundingpays().add(this);
+    }
 }

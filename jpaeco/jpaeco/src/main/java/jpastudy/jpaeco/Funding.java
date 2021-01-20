@@ -38,10 +38,16 @@ public class Funding {
 //    private String funcontents; //글내용
 //    private Date fundate; // 글날짜
 
+    @Enumerated(EnumType.STRING)
     private Notice notice;  // 모집마감여부 yes,no
+
     private int participants; // 모집인원수
 
-
+    //연관관계 편의 메서드
+    public void setMember(Member member) {
+        this.member = member;
+        member.getFundings().add(this);
+    }
 
 
 

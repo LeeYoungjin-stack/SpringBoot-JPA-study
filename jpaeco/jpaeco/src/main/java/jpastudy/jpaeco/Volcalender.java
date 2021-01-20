@@ -33,7 +33,11 @@ public class Volcalender {
     @Embedded
     private VolDate voldate; // 봉사날짜관련
 
-
+    //연관관계 편의 메서드
+    public void setMember(Member member) {
+        this.member = member;
+        member.getVolcalenders().add(this);
+    }
 
 
 

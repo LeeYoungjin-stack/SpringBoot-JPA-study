@@ -21,4 +21,9 @@ public class Volmember {
     private String voltitle; //봉사글제목
     private String voldid; // 봉사글작성자
 
+    public void setVolcalender(Volcalender volcalender) {
+        this.volcalender= volcalender;
+        volcalender.getVolmembers().add(this);
+    }
+
 }
