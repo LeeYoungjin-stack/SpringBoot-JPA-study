@@ -13,5 +13,4 @@ springboot 세팅, jpa,db설정 모두
 bootstrap,thymeleaf 로메인페이지, 자유게시판,봉사신청게시판,펀딩게시판 생성 
 common.html에 thymeleaf 속성을 주어서 생산성에 도움을 주게끔 설정
 header 설정 
-자유게시판 글쓰기, 글수정하기 추가
--- 
+자유게시판 글쓰기, 글수정하기 추가 (글수정하기 오류발견)
