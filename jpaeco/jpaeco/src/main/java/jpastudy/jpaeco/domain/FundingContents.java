@@ -3,7 +3,8 @@ package jpastudy.jpaeco.domain;
 import lombok.Getter;
 
 import javax.persistence.Embeddable;
-import java.util.Date;
+import java.time.LocalDateTime;
+
 
 @Embeddable
 @Getter
@@ -13,5 +14,5 @@ public class FundingContents {
     private String funtitle; // 글제목
     private String funwriteid; // 글작성자
     private String funcontents; //글내용
-    private Date fundate; // 글날짜
+    private LocalDateTime fundate; // 글날짜
 }

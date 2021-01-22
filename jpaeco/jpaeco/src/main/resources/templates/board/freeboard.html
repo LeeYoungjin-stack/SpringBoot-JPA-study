@@ -52,6 +52,29 @@
     <div class="container">
         <h2>자유게시판</h2>
 <!--        <p class="lead">boot,jpa 를이용해서 만들어보기 <br> 프론트단은 향후 수정예정</p>-->
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">번호</th>
+                <th scope="col">ID</th>
+                <th scope="col">제목</th>
+                <th scope="col">내용</th>
+                <th scope="col">날짜</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="board : ${freeboards}">
+                <td th:text="${board.freeseq}">1</td>
+                <td th:text="${board.id}">Otto</td>
+                <td><a th:text="${board.title}" th:href="@{/board/form(id=${board.id})}">@mdo</a></td>
+                <td th:text="${board.content}">@mdo</td>
+                <td th:text="${board.freedate}">2021.01.22</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="text-end">
+        <a type="button" class="btn btn-primary" th:href="@{/board/form}">글 쓰기</a>
+        </div>
     </div>
 
 

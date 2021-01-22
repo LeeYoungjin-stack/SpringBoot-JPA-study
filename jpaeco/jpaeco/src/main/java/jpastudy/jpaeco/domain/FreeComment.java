@@ -4,7 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDateTime;
+
 
 @Entity
 @Getter @Setter
@@ -23,7 +24,7 @@ public class FreeComment {
 
     private String commentid;
     private String commentcontent;
-    private Date commentdate;
+    private LocalDateTime commentdate;
 
     //연관관계 편의 메서드
 
