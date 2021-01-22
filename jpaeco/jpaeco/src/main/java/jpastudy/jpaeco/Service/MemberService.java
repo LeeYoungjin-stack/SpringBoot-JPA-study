@@ -66,8 +66,6 @@ public class MemberService {
     }
 
 
-    //연동로그인
-
     // 마이페이지
 
     // 아이디찾기
